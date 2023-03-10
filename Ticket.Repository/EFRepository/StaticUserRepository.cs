@@ -1,7 +1,7 @@
 ﻿using Ticket.Model.Domain;
 using Ticket.Repository.Interface;
 
-namespace Ticket.Repository.EFTicketRepository
+namespace Ticket.Repository.EFRepository
 {
 	public class StaticUserRepository : IUserRepository
 	{
@@ -11,7 +11,7 @@ namespace Ticket.Repository.EFTicketRepository
 			{
 				FirstName = "Read Only", LastName = "User", EmailAddress = "readonly@user.com",
 				Id = 1, Username = "readonly@user.com", Password = "Readonly@user",
-				Roles = new List<string> { "reader" }
+				Roles = new List<string> {"reader"}
 			},
 			new User()
 			{
@@ -20,8 +20,6 @@ namespace Ticket.Repository.EFTicketRepository
 				Roles = new List<string> { "reader", "writer" }
 			}
 		};
-
-
 
 		public async Task<User> Authenticate(string username, string password)
 		{

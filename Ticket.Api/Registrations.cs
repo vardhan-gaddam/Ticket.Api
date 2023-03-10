@@ -2,7 +2,7 @@
 using SimpleInjector.Packaging;
 using Ticket.Domain.Interface;
 using Ticket.Domain.Services;
-using Ticket.Repository.EFTicketRepository;
+using Ticket.Repository.EFRepository;
 using Ticket.Repository.Interface;
 using Tickets.Repository.EFTicketRepository;
 

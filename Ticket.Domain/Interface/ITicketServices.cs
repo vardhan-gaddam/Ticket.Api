@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ticket.Model.Domain;
+﻿using Ticket.Model.Domain;
 
 namespace Ticket.Domain.Interface
 {

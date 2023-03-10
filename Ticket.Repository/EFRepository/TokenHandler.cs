@@ -6,7 +6,7 @@ using System.Text;
 using Ticket.Model.Domain;
 using Ticket.Repository.Interface;
 
-namespace Ticket.Repository.EFTicketRepository
+namespace Ticket.Repository.EFRepository
 {
 	public class TokenHandler : ITokenHandler
 	{

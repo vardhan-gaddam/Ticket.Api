@@ -24,7 +24,7 @@ namespace Ticket.Api
 			builder.Services.AddSwaggerGen(options =>
 			{
 				var securityScheme = new OpenApiSecurityScheme
-				{
+				{	
 					Name = "JWT Authentication",
 					Description = "Enter a valid JWT bearer token",
 					In = ParameterLocation.Header,

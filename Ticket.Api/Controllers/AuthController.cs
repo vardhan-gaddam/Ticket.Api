@@ -7,12 +7,12 @@ namespace Ticket.Api.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]
-	public class AuthenticationController : Controller
+	public class AuthController : Controller
 	{
 		private readonly IUserRepository _userRepository;
 		private readonly ITokenHandler _tokenHandler;
 
-		public AuthenticationController(IUserRepository userRepository, ITokenHandler tokenHandler)
+		public AuthController(IUserRepository userRepository, ITokenHandler tokenHandler)
 		{
 			_userRepository = userRepository;
 			_tokenHandler = tokenHandler;
@@ -34,7 +34,7 @@ namespace Ticket.Api.Controllers
 				return Ok(token);
 			}
 
-			return BadRequest("Username or Password is incorrect.");
+			return BadRequest(new { message = "Username or Password is incorrect." });
 		}
 	}
 }
